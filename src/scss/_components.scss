@@ -1,0 +1,50 @@
+.header {
+	height: 130px;
+	&__items {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		&_group {
+			position: relative;
+			display: flex;
+			justify-content: center;
+			&::after {
+				content: '';
+				position: absolute;
+				width: 120%;
+				height: 1px;
+				background-color: $color-orange;
+				top: 120%;
+			}
+		}
+	}
+	&__logo {
+		height: 90%;
+		a {
+			display: block;
+			height: 100%;
+		}
+		img {
+			height: 100%;
+		}
+	}
+}
+
+.floating-btn {
+	position: fixed;
+	z-index: 100;
+	bottom: 20px;
+	right: 20px;
+	height: 78px;
+	width: 78px;
+	background: $color-orange;
+	border-radius: 100%;
+	img {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		height: 47px;
+		width: 47%;
+		transform: translate(-50%, -50%);
+	}
+}
