@@ -135,13 +135,13 @@
 	font-size: min(0.375em, 2.2rem);
 	padding: 0.8em 1.2em;
 	margin-top: 80px;
-	transition: all ease 0.3s;
+	transition: all ease 0.2s;
 	text-transform: uppercase;
 	text-decoration: none !important;
 	&:hover {
 		background: $color-orange;
 		color: $color-light;
-		transform: scale(105%);
+		// transform: scale(105%);
 	}
 	&-dark {
 		color: $color-light;
@@ -269,5 +269,103 @@
 	}
 	&:hover {
 		opacity: 100%;
+	}
+}
+
+.modal {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 11;
+	box-shadow: 0px 4px 4px rgb(0 0 0 / 11%);
+	transition: opacity 0.3s ease;
+
+	&-hidden {
+		visibility: hidden;
+	}
+	&__overlay {
+		height: 100%;
+		width: 100%;
+		background: rgba($color-dark, 0.7);
+		backdrop-filter: blur(4px);
+	}
+
+	&__body {
+		@include flex-center-col;
+		height: 85vh;
+		width: 70vw;
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background: rgba($color-light, 0.9);
+		backdrop-filter: blur(4px);
+	}
+
+	&__content {
+		width: 80%;
+		@include flex-center-col;
+		h2 {
+			font-size: 7.7vh;
+			color: $color-dark;
+			text-transform: uppercase;
+			margin-bottom: 7.7vh;
+		}
+		form {
+			ul {
+				width: 50vw;
+				@include flex-center-col;
+			}
+			li {
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+				&.form-btn {
+					justify-content: center;
+				}
+			}
+			label {
+				// width: 20rem;
+				display: block;
+				margin-bottom: 3rem;
+				font-size: 3.4vh;
+				text-transform: uppercase;
+			}
+			input {
+				background: $color-light;
+				border: solid 2px $color-dark;
+				width: 40rem;
+				height: 4.5rem;
+				display: block;
+				text-align: right;
+				font-size: 3.4vh;
+				&#pers {
+					width: 6rem;
+				}
+			}
+			button {
+				width: 30rem;
+				font-size: 3.4vh;
+				margin: 2rem 0 0 0;
+			}
+		}
+	}
+
+	&__close-btn {
+		position: fixed;
+		top: 4.5rem;
+		right: 4.5rem;
+		opacity: 80%;
+		&:hover {
+			transform: scale(105%);
+			opacity: 100%;
+			transition: all 0.2s ease;
+			path {
+				transition: all 0.2s ease;
+				stroke: $color-orange;
+			}
+		}
 	}
 }

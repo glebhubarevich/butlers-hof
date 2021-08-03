@@ -181,9 +181,66 @@
 				</div>
 			</div>
 		</footer>
+
+		<!-- Floating Button -->
 		<a href="tel:+49928186496"
 			><div class="floating-btn">
 				<img src="src/img/phone.svg" alt="phone symbol" /></div
 		></a>
+		<!--  -->
+		<!--  -->
+		<!-- Modal Window (booking) -->
+		<div class="modal modal-hidden">
+			<div class="modal__overlay"></div>
+			<div class="modal__body">
+				<div class="modal__content">
+					<h2>Tisch reservieren</h2>
+					<form action="">
+						<ul class="modal__content_wrapper">
+							<li class="modal__form_row">
+								<label for="name">Name*</label>
+								<input type="text" id="fullname" />
+							</li>
+							<li class="modal__form_row">
+								<label for="date">Datum*</label>
+								<input type="date" id="date" />
+							</li>
+							<li class="modal__form_row">
+								<label for="time">Uhrzeit*</label>
+								<input type="time" id="date" />
+							</li>
+							<li class="modal__form_row">
+								<label for="pers">Personen*</label>
+								<input type="number" id="pers" min="1" value="1" />
+							</li>
+							<li class="modal__form_row">
+								<label for="tel">Telefon</label>
+								<input type="tel" id="phone" />
+							</li>
+							<li class="modal__form_row form-btn">
+								<button class="button-outline" type="submit">Buchen</button>
+							</li>
+						</ul>
+					</form>
+				</div>
+				<div class="modal__close-btn">
+					<svg
+						width="35"
+						height="35"
+						viewBox="0 0 35 35"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M34 1L1 34M34 34L1 1L34 34Z"
+							stroke="#242321"
+							stroke-width="2"
+							stroke-linecap="round"
+						/>
+					</svg>
+					<!-- <img src="src/img/close-btn.svg" alt="close-btn" /> -->
+				</div>
+			</div>
+		</div>
 	</body>
 </html>

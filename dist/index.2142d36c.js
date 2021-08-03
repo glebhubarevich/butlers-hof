@@ -430,36 +430,27 @@ function hmrAcceptRun(bundle, id) {
 },{}],"3L8AI":[function(require,module,exports) {
 "use strict";
 require('regenerator-runtime');
-// import {header} from './header.js';
+require('./header.js');
 // 
 // Variables
 // 
-const floatingHeader = document.querySelector('.header');
-const heroHeader = document.querySelector('.hero__header');
+const modal = document.querySelector('.modal');
+const modalCloseBtn = document.querySelector('.modal__close-btn');
 // 
 // Functions
 // 
-// Toggling secondary header when primary is out of viewport
-/***************/
-function toggleHeader(entries) {
-  if (!entries[0].isIntersecting) {
-    floatingHeader.classList.add('header-active');
-  }
-  if (entries[0].isIntersecting) {
-    floatingHeader.classList.remove('header-active');
-  }
-}
-const headerObserver = new IntersectionObserver(toggleHeader, {
-  root: null,
-  threshold: 0
-});
-/***************/
+const closeModal = () => {
+  modal.classList.add('modal-hidden');
+  setTimeout(() => {
+    modal.style.visibility = 'none';
+  });
+};
 // 
 // Event Listeners
 // 
-headerObserver.observe(heroHeader);
+modalCloseBtn.addEventListener('click', closeModal);
 
-},{"regenerator-runtime":"62Qib"}],"62Qib":[function(require,module,exports) {
+},{"regenerator-runtime":"62Qib","./header.js":"5WwWr"}],"62Qib":[function(require,module,exports) {
 /**
  * Copyright (c) 2014-present, Facebook, Inc.
  *
@@ -1214,6 +1205,27 @@ try {
     Function("r", "regeneratorRuntime = r")(runtime);
   }
 }
+
+},{}],"5WwWr":[function(require,module,exports) {
+'use strict';
+
+const floatingHeader = document.querySelector('.header');
+const heroHeader = document.querySelector('.hero__header');
+
+function toggleHeader(entries) {
+	if (!entries[0].isIntersecting) {
+		floatingHeader.classList.add('header-active');
+	}
+	if (entries[0].isIntersecting) {
+		floatingHeader.classList.remove('header-active');
+	}
+}
+const headerObserver = new IntersectionObserver(toggleHeader, {
+	root: null,
+	threshold: 0,
+});
+
+headerObserver.observe(heroHeader);
 
 },{}]},["21c8X","3L8AI"], "3L8AI", "parcelRequireebf8")
 
