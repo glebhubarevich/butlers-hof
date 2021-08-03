@@ -1,4 +1,0 @@
-"use strict";
-require('regenerator-runtime');
-require('./header.js');
-console.log('hi');
