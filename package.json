@@ -1,0 +1,23 @@
+{
+	"name": "butlers",
+	"version": "1.0.0",
+	"description": "Website redesign for Butler's Pub and restaurant in Hof",
+	"main": "index.html",
+	"scripts": {
+		"start": "npx parcel index.html --no-cache"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/glebhubarevich/butlers-hof.git"
+	},
+	"author": "Gleb Hubarevich",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/glebhubarevich/butlers-hof/issues"
+	},
+	"homepage": "https://github.com/glebhubarevich/butlers-hof#readme",
+	"devDependencies": {
+		"@parcel/transformer-sass": "^2.0.0-beta.2",
+		"parcel": "^2.0.0-beta.2"
+	}
+}

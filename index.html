@@ -4,8 +4,9 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="css/global.css" />
+		<link rel="stylesheet" href="src/scss/global.scss" />
 		<title>Butler's Pub & Restaurant Hof</title>
+		<script defer src="src/js/index.js"></script>
 	</head>
 	<body>
 		<header class="header">
@@ -15,7 +16,7 @@
 					<div class="header__items_item"><a href="#">Speisekarte</a></div>
 				</div>
 				<div class="header__items_item header__logo">
-					<a href="#"><img src="src/img/logo.png" alt="logo" /></a>
+					<a href="#"><img src="src/img/logo-min.svg" alt="logo" /></a>
 				</div>
 				<div class="header__items_group">
 					<div class="header__items_item"><a href="#">Events</a></div>
@@ -23,41 +24,47 @@
 				</div>
 			</div>
 		</header>
-		<section class="hero">
+		<section class="hero" id="hero">
 			<div class="hero__bg-img">
 				<div class="hero__bg-overlay"></div>
 			</div>
-			<div class="container">
+			<div class="hero__container">
 				<div class="hero__header">
 					<div class="hero__header_logo">
-						<img class="hero__header_logo-left" src="src/img/hops-left.png" alt="" />
+						<div class="hero__header_logo-container">
+							<img class="hero__header_logo-left" src="src/img/hops-left.png" alt="" />
+						</div>
 						<a href="index.html">
-							<img class="hero__header_logo-center" src="src/img/Logo.png" alt="logo" />
+							<img class="hero__header_logo-center" src="src/img/logo.svg" alt="logo" />
 						</a>
-						<img class="hero__header_logo-right" src="src/img/hops-right.png" alt="" />
+						<div class="hero__header_logo-container">
+							<img class="hero__header_logo-right" src="src/img/hops-right.png" alt="" />
+						</div>
 					</div>
 					<nav class="hero__header_navigation">
-						<ul>
-							<li><a href="#">Über uns</a></li>
-							<li><a href="#">Speisekarte</a></li>
-							<li><a href="#">Events</a></li>
-							<li><a href="#">Kontakt</a></li>
-						</ul>
+						<div class="hero__header_navigation-group">
+							<a href="#">Über uns</a>
+							<a href="#">Speisekarte</a>
+						</div>
+						<div class="hero__header_navigation-group">
+							<a href="#">Events</a>
+							<a href="#">Kontakt</a>
+						</div>
 					</nav>
 				</div>
 				<h1>
 					Leckeres Essen, kaltes Bier<br />
 					und richtig gute Zeit
 				</h1>
-				<button class="hero__book-btn">Tisch reservieren</button>
+				<button class="hero__book-btn button-outline">Tisch reservieren</button>
 			</div>
 		</section>
 		<section class="banner">
 			<p>Happy Hour Mo-Fr 17:00 bis 20:00</p>
 		</section>
-		<section class="about">
-			<div class="about__image section-img"></div>
-			<div class="about__content section-content">
+		<section class="about h-section">
+			<div class="about__image h-section-img"></div>
+			<div class="about__content h-section-content">
 				<h2>Über uns</h2>
 				<p>
 					Ultrices porttitor ipsum quis pellentesque habitasse neque, nibh. Tellus proin
@@ -68,9 +75,9 @@
 				<a href="/about" class="about__content_btn button-outline">Mehr erfahren</a>
 			</div>
 		</section>
-		<section class="menu">
-			<div class="menu__image section-img"></div>
-			<div class="menu__content section-content">
+		<section class="menu h-section">
+			<div class="menu__image h-section-img"></div>
+			<div class="menu__content h-section-content">
 				<h2>Speisekarte</h2>
 				<p>
 					Eget dignissim a purus a, elit. Suspendisse fringilla velit nisl amet rutrum
@@ -81,10 +88,10 @@
 				<a href="/menu" class="menu__content_btn button-outline">Unsere speisekarte</a>
 			</div>
 		</section>
-		<section class="events">
-			<div class="events__image section-img"></div>
-			<div class="events__content section-content">
-				<h2>Über uns</h2>
+		<section class="events h-section">
+			<div class="events__image h-section-img"></div>
+			<div class="events__content h-section-content">
+				<h2>Events</h2>
 				<p>
 					Tellus proin dignissim eleifend odio. Sit tortor, rhoncus sit ultrices. Sed
 					pellentesque fusce praesent gravida aliquam tincidunt semper interdum sed. At sed
@@ -96,6 +103,14 @@
 			</div>
 		</section>
 		<section class="gallery">
+			<div class="gallery__controlls">
+				<button class="gallery__controlls_btn gallery__controlls_btn-left">
+					<img src="src/img/arrow-btn.svg" alt="" />
+				</button>
+				<button class="gallery__controlls_btn gallery__controlls_btn-right">
+					<img src="src/img/arrow-btn.svg" alt="" />
+				</button>
+			</div>
 			<div class="gallery__carrousel">
 				<div class="gallery__carrousel_item"></div>
 				<div class="gallery__carrousel_item"></div>
@@ -104,11 +119,12 @@
 				<div class="gallery__carrousel_item"></div>
 			</div>
 		</section>
-		<section class="contact" id="contact">
+
+		<section class="contact h-section" id="contact">
 			<div class="contact__map">
-				<!-- leaflet inserted by JS -->
+				<!-- leaflet map inserted by JS -->
 			</div>
-			<div class="contact__content">
+			<div class="contact__content h-section-content">
 				<div class="contact__content_wrapper">
 					<h2>Kontakt</h2>
 					<p>
@@ -118,9 +134,11 @@
 					<a href="tel:+49928186496">09281 86496</a>
 					<a href="mailto:info@butlers-hof.de">info@butlers-hof.de</a>
 					<h4>Öffnungszeiten:</h4>
-					<p>Mo - So 18:00 - 01:00</p>
+					<p>Mo - So 17:00 - 01:00</p>
 				</div>
-				<button class="contact__content_book button-outline">Tisch reservieren</button>
+				<button class="contact__content_book button-outline button-outline-dark">
+					Tisch reservieren
+				</button>
 				<div class="contact__content_social">
 					<a href="" class="contact__content_social-btn"
 						><img src="src/img/social/facebook.svg" alt="facebook"
@@ -135,29 +153,37 @@
 			</div>
 		</section>
 		<footer class="footer">
-			<div class="footer__contact">
-				<h4>Buttler’s Hof</h4>
-				<p>
-					Luitpoldstraße 4<br />
-					95028 Hof<br />
-					09281 86496<br />
-					info@butlers-hof.de
-				</p>
-			</div>
-			<div class="footer__logo">
-				<img src="src/img/Logo.png" alt="logo" class="footer__logo_img" />
-				<small>&copy; 2021 Gleb Hubarevich</small>
-			</div>
-			<div class="footer__links">
-				<h4>Links</h4>
-				<a href="#contact">Kontakt</a>
-				<a href="legal.html#agb">AGBs</a>
-				<a href="legal.html#cookies">Cookies</a>
-				<a href="legal.html#impressum">Impressum</a>
+			<div class="footer__container">
+				<div class="footer__contact footer__container_element">
+					<h4>Buttler’s Hof</h4>
+					<p>Luitpoldstraße 4<br />95028 Hof</p>
+					<a href="tel:+49928186496">09281 86496</a>
+					<a href="mailto:info@butlers-hof.de">info@butlers-hof.de</a>
+				</div>
+				<div class="footer__logo">
+					<img src="src/img/Logo.png" alt="logo" />
+					<small
+						><a href="https://github.com/glebhubarevich" target="_blank"
+							>&copy; 2021 Gleb Hubarevich</a
+						></small
+					>
+				</div>
+				<div class="footer__links footer__container_element">
+					<h4>Links</h4>
+					<a href="#contact">Kontakt</a>
+					<a href="#">AGBs</a>
+					<a href="#">Cookies</a>
+					<a href="#">Impressum</a>
+					<!-- <a href="#contact">Kontakt</a>
+					<a href="legal.html#agb">AGBs</a>
+					<a href="legal.html#cookies">Cookies</a>
+					<a href="legal.html#impressum">Impressum</a> -->
+				</div>
 			</div>
 		</footer>
-		<div class="floating-btn">
-			<a href="#"><img src="src/img/phone.svg" alt="phone symbol" /></a>
-		</div>
+		<a href="tel:+49928186496"
+			><div class="floating-btn">
+				<img src="src/img/phone.svg" alt="phone symbol" /></div
+		></a>
 	</body>
 </html>

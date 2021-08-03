@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="a731250b48781417fe0535c674525a17">
+		<title>Butler's Pub & Restaurant Hof</title>
+		<script defer="" src="dace7807c6de34c48677f8ff618ef877"></script>
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__items">
+				<div class="header__items_group">
+					<div class="header__items_item"><a href="#">Über uns</a></div>
+					<div class="header__items_item"><a href="#">Speisekarte</a></div>
+				</div>
+				<div class="header__items_item header__logo">
+					<a href="#"><img src="0f1b68261a45e74c2fca465e1ab6396c" alt="logo"></a>
+				</div>
+				<div class="header__items_group">
+					<div class="header__items_item"><a href="#">Events</a></div>
+					<div class="header__items_item"><a href="#">Kontakt</a></div>
+				</div>
+			</div>
+		</header>
+		<section class="hero" id="hero">
+			<div class="hero__bg-img">
+				<div class="hero__bg-overlay"></div>
+			</div>
+			<div class="hero__container">
+				<div class="hero__header">
+					<div class="hero__header_logo">
+						<div class="hero__header_logo-container">
+							<img class="hero__header_logo-left" src="3fada4703783ccb42803c1debdbc3c1d" alt="">
+						</div>
+						<a href="33edaf6d12d13fd3397234e18ac8a5e2">
+							<img class="hero__header_logo-center" src="98c82267db6a680488ac7c87a11972e0" alt="logo">
+						</a>
+						<div class="hero__header_logo-container">
+							<img class="hero__header_logo-right" src="02e040b5972f971089322ee89c6cf56e" alt="">
+						</div>
+					</div>
+					<nav class="hero__header_navigation">
+						<div class="hero__header_navigation-group">
+							<a href="#">Über uns</a>
+							<a href="#">Speisekarte</a>
+						</div>
+						<div class="hero__header_navigation-group">
+							<a href="#">Events</a>
+							<a href="#">Kontakt</a>
+						</div>
+					</nav>
+				</div>
+				<h1>
+					Leckeres Essen, kaltes Bier<br>
+					und richtig gute Zeit
+				</h1>
+				<button class="hero__book-btn button-outline">Tisch reservieren</button>
+			</div>
+		</section>
+		<section class="banner">
+			<p>Happy Hour Mo-Fr 17:00 bis 20:00</p>
+		</section>
+		<section class="about h-section">
+			<div class="about__image h-section-img"></div>
+			<div class="about__content h-section-content">
+				<h2>Über uns</h2>
+				<p>
+					Ultrices porttitor ipsum quis pellentesque habitasse neque, nibh. Tellus proin
+					dignissim eleifend odio. Sit tortor, rhoncus sit ultrices. Sed pellentesque fusce
+					praesent gravida aliquam tincidunt semper interdum sed. At sed libero cursus feugiat
+					et purus non ut.
+				</p>
+				<a href="/about" class="about__content_btn button-outline">Mehr erfahren</a>
+			</div>
+		</section>
+		<section class="menu h-section">
+			<div class="menu__image h-section-img"></div>
+			<div class="menu__content h-section-content">
+				<h2>Speisekarte</h2>
+				<p>
+					Eget dignissim a purus a, elit. Suspendisse fringilla velit nisl amet rutrum
+					tincidunt convallis eu id. Risus amet tortor augue risus pellentesque faucibus duis
+					sollicitudin enim. Justo vel amet in vestibulum tortor eu, lectus pretium. Sit
+					tortor, rhoncus sit ultrices.
+				</p>
+				<a href="/menu" class="menu__content_btn button-outline">Unsere speisekarte</a>
+			</div>
+		</section>
+		<section class="events h-section">
+			<div class="events__image h-section-img"></div>
+			<div class="events__content h-section-content">
+				<h2>Events</h2>
+				<p>
+					Tellus proin dignissim eleifend odio. Sit tortor, rhoncus sit ultrices. Sed
+					pellentesque fusce praesent gravida aliquam tincidunt semper interdum sed. At sed
+					libero cursus feugiat et purus non ut. Lorem ipsum dolor sit amet, consectetur
+					adipisicing elit. Accusantium, molestiae, necessitatibus vero, quos nam nulla magni
+					rem.
+				</p>
+				<a href="/events" class="events__content_btn button-outline">Mehr erfahren</a>
+			</div>
+		</section>
+		<section class="gallery">
+			<div class="gallery__controlls">
+				<button class="gallery__controlls_btn gallery__controlls_btn-left">
+					<img src="8d6e8552b7134a7c50e18d480429994f" alt="">
+				</button>
+				<button class="gallery__controlls_btn gallery__controlls_btn-right">
+					<img src="8d6e8552b7134a7c50e18d480429994f" alt="">
+				</button>
+			</div>
+			<div class="gallery__carrousel">
+				<div class="gallery__carrousel_item"></div>
+				<div class="gallery__carrousel_item"></div>
+				<div class="gallery__carrousel_item"></div>
+				<div class="gallery__carrousel_item"></div>
+				<div class="gallery__carrousel_item"></div>
+			</div>
+		</section>
+
+		<section class="contact h-section" id="contact">
+			<div class="contact__map">
+				<!-- leaflet map inserted by JS -->
+			</div>
+			<div class="contact__content h-section-content">
+				<div class="contact__content_wrapper">
+					<h2>Kontakt</h2>
+					<p>
+						Luitpoldstraße 4<br>
+						95028 Hof
+					</p>
+					<a href="tel:+49928186496">09281 86496</a>
+					<a href="37898650624d625346b3ae3b22e5e37a">info@butlers-hof.de</a>
+					<h4>Öffnungszeiten:</h4>
+					<p>Mo - So 17:00 - 01:00</p>
+				</div>
+				<button class="contact__content_book button-outline button-outline-dark">
+					Tisch reservieren
+				</button>
+				<div class="contact__content_social">
+					<a href="" class="contact__content_social-btn"><img src="638e50086d605337eb152b512c575ede" alt="facebook"></a>
+					<a href="" class="contact__content_social-btn"><img src="a968772abde97466db14986b5c937656" alt="instagram"></a>
+					<a href="" class="contact__content_social-btn"><img src="2e9c567af469e48c4fa1f88c274827cb" alt="twitter"></a>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__contact footer__container_element">
+					<h4>Buttler’s Hof</h4>
+					<p>Luitpoldstraße 4<br>95028 Hof</p>
+					<a href="tel:+49928186496">09281 86496</a>
+					<a href="37898650624d625346b3ae3b22e5e37a">info@butlers-hof.de</a>
+				</div>
+				<div class="footer__logo">
+					<img src="9a9f06cd43d517cbaf2e866717684f17" alt="logo">
+					<small><a href="855429f7579f58758eae815413b6f790" target="_blank">&copy; 2021 Gleb Hubarevich</a></small>
+				</div>
+				<div class="footer__links footer__container_element">
+					<h4>Links</h4>
+					<a href="#contact">Kontakt</a>
+					<a href="#">AGBs</a>
+					<a href="#">Cookies</a>
+					<a href="#">Impressum</a>
+					<!-- <a href="#contact">Kontakt</a>
+					<a href="legal.html#agb">AGBs</a>
+					<a href="legal.html#cookies">Cookies</a>
+					<a href="legal.html#impressum">Impressum</a> -->
+				</div>
+			</div>
+		</footer>
+		<a href="tel:+49928186496"><div class="floating-btn">
+				<img src="f4e315afcf7fde0bf6b54b2ace885022" alt="phone symbol"></div></a>
+	</body>
+</html>

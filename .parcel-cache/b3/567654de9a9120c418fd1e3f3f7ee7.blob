@@ -1,0 +1,13 @@
+"use strict";
+require('regenerator-runtime');
+// import {header} from './header.js';
+// 
+// Variables
+// 
+const header = document.querySelector('.header');
+// 
+// Functions
+// 
+const toggleHeader = () => {
+  header.classList.toggle('header-active');
+};

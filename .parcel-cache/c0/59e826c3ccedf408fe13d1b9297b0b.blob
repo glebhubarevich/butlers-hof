@@ -1,0 +1,37 @@
+"use strict";
+require('regenerator-runtime');
+// import {header} from './header.js';
+// 
+// Variables
+// 
+const header = document.querySelector('.header');
+const hero = document.querySelector('.hero__header');
+// 
+// Functions
+// 
+// Toggling secondary header when primary is out of viewport
+/***************/
+function toggleHeader(entries) {
+  console.log(entries);
+  if (!entries[0].isIntersecting) {
+    header.classList.add('header-active');
+  }
+  if (entries[0].isIntersecting) {
+    header.classList.remove('header-active');
+  }
+}
+const headerObserver = new IntersectionObserver(toggleHeader, {
+  root: null,
+  threshold: 0
+});
+/***************/
+// 
+// Event Listeners
+// 
+headerObserver.observe(hero);
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    document.body.style.transition = 'all 0.1s ease';
+    document.body.style.opacity = 100;
+  }, 100);
+});

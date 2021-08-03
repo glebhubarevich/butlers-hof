@@ -1,0 +1,24 @@
+"use strict";
+require('regenerator-runtime');
+// import {header} from './header.js';
+// 
+// Variables
+// 
+const header = document.querySelector('.header');
+// 
+// Functions
+// 
+// 
+// Event Listeners
+// 
+function toggleHeader(e) {
+  e.forEach(element => {
+    console.log(element);
+  });
+  header.classList.toggle('header-active');
+}
+const headerObserver = new IntersectionObserver(toggleHeader, {
+  root: null,
+  threshold: 0
+});
+headerObserver.observe(Document);
