@@ -151,7 +151,7 @@
 }
 
 .slider {
-	height: calc((25vw + 9rem) / 4 * 3);
+	height: 30rem;
 	width: 100vw;
 	overflow: hidden;
 	position: relative;
@@ -170,7 +170,7 @@
 	}
 
 	&__slide {
-		width: calc(25vw + 9rem);
+		width: 40rem;
 		height: 100%;
 		> img {
 			height: 100%;

@@ -476,7 +476,8 @@ const sliderBody = document.querySelector('.slider__container');
 const slides = document.querySelectorAll('.slider__slide');
 const slide = document.querySelector('.slider__slide_img');
 const maxSlide = slides.length - 3;
-const slideWidth = window.innerWidth / 4 + 120;
+// const slideWidth = window.innerWidth / 4 + 120;
+const slideWidth = slide.offsetWidth;
 let curSlide = 0;
 
 function showSlide() {}
