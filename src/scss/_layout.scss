@@ -152,6 +152,11 @@ body {
 	&__image {
 		background: url(../img/events.jpg);
 	}
+	border: none;
+}
+
+.gallery {
+	@include flex-center-col;
 }
 
 .contact {

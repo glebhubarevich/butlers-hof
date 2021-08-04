@@ -3,24 +3,20 @@
 //
 //Imports
 //
-import {async} from 'regenerator-runtime';
+// import {async} from 'regenerator-runtime';
 import {header} from './header.js';
+import {slider} from './slider.js';
+import $ from './jquery-3.6.0.min.js';
+window.$ = window.jQuery = $;
 
-//
-//Variables
-//
-const modal = document.querySelector('.modal');
-const modalCloseBtn = document.querySelector('.modal__close-btn');
-//
-//Functions
-//
-const closeModal = () => {
-	modal.classList.add('modal-hidden');
-	setTimeout(() => {
-		modal.style.visibility = 'none';
+$(document).ready(function () {
+	//Closing/Opening modal
+	$('.modal__close-btn, .modal__overlay').on('click', () => {
+		$('.modal').fadeOut();
+		$('body').css('overflowY', 'scroll');
 	});
-};
-//
-//Event Listeners
-//
-modalCloseBtn.addEventListener('click', closeModal);
+	$('.book-btn').on('click', () => {
+		$('.modal').fadeIn();
+		$('body').css('overflowY', 'hidden');
+	});
+});

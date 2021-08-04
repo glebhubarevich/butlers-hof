@@ -5,7 +5,10 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="/index.95c259d0.css">
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
 		<title>Butler's Pub & Restaurant Hof</title>
+
+		<script defer="" src="/index.e83492e8.js"></script>
 		<script defer="" src="/index.2142d36c.js"></script>
 	</head>
 	<body>
@@ -56,7 +59,7 @@
 					Leckeres Essen, kaltes Bier<br>
 					und richtig gute Zeit
 				</h1>
-				<button class="hero__book-btn button-outline">Tisch reservieren</button>
+				<button class="hero__book-btn button-outline book-btn">Tisch reservieren</button>
 			</div>
 		</section>
 		<section class="banner">
@@ -103,20 +106,53 @@
 			</div>
 		</section>
 		<section class="gallery">
-			<div class="gallery__controlls">
+			<!-- <div class="gallery__controlls">
 				<button class="gallery__controlls_btn gallery__controlls_btn-left">
-					<img src="/arrow-btn.2b4c8168.svg" alt="">
+					<img src="src/img/arrow-btn.svg" alt="" />
 				</button>
 				<button class="gallery__controlls_btn gallery__controlls_btn-right">
-					<img src="/arrow-btn.2b4c8168.svg" alt="">
+					<img src="src/img/arrow-btn.svg" alt="" />
 				</button>
 			</div>
-			<div class="gallery__carrousel">
-				<div class="gallery__carrousel_item"></div>
-				<div class="gallery__carrousel_item"></div>
-				<div class="gallery__carrousel_item"></div>
-				<div class="gallery__carrousel_item"></div>
-				<div class="gallery__carrousel_item"></div>
+			<div class="gallery__carousel">
+				<img class="gallery__carousel_item" src="src/img/carousel/1.jpg"></img>
+				<img class="gallery__carousel_item" src="src/img/carousel/2.jpg"></img>
+				<img class="gallery__carousel_item" src="src/img/carousel/3.jpg"></img>
+				<img class="gallery__carousel_item" src="src/img/carousel/4.jpg"></img>
+				<img class="gallery__carousel_item" src="src/img/carousel/5.jpg"></img>
+				<img class="gallery__carousel_item" src="src/img/carousel/6.jpg"></img>
+				<img class="gallery__carousel_item" src="src/img/carousel/7.jpg"></img>
+			</div> -->
+			<div class="slider">
+				<div class="slider__container">
+					<div class="slider__slide">
+						<img class="slider__slide_img" src="/1.9901a04f.jpg" alt="">
+					</div>
+					<div class="slider__slide">
+						<img class="slider__slide_img" src="/2.6419c4be.jpg" alt="">
+					</div>
+					<div class="slider__slide">
+						<img class="slider__slide_img" src="/3.5b139230.jpg" alt="">
+					</div>
+					<div class="slider__slide">
+						<img class="slider__slide_img" src="/4.116874c0.jpg" alt="">
+					</div>
+					<div class="slider__slide">
+						<img class="slider__slide_img" src="/5.3814bf4e.jpg" alt="">
+					</div>
+					<div class="slider__slide">
+						<img class="slider__slide_img" src="/6.fb7fe3a8.jpg" alt="">
+					</div>
+					<div class="slider__slide">
+						<img class="slider__slide_img" src="/7.56cf7576.jpg" alt="">
+					</div>
+				</div>
+				<button class="slider__btn slider__btn-left">
+					<img src="/arrow-btn.2b4c8168.svg" alt="">
+				</button>
+				<button class="slider__btn slider__btn-right">
+					<img src="/arrow-btn.2b4c8168.svg" alt="">
+				</button>
 			</div>
 		</section>
 
@@ -136,7 +172,7 @@
 					<h4>Öffnungszeiten:</h4>
 					<p>Mo - So 17:00 - 01:00</p>
 				</div>
-				<button class="contact__content_book button-outline button-outline-dark">
+				<button class="contact__content_book button-outline button-outline-dark book-btn">
 					Tisch reservieren
 				</button>
 				<div class="contact__content_social">
@@ -178,7 +214,7 @@
 		<!--  -->
 		<!--  -->
 		<!-- Modal Window (booking) -->
-		<div class="modal modal-hidden">
+		<div class="modal">
 			<div class="modal__overlay"></div>
 			<div class="modal__body">
 				<div class="modal__content">
