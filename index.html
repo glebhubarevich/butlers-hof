@@ -10,9 +10,22 @@
 			type="text/css"
 			href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+			integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+			crossorigin=""
+		/>
+
 		<title>Butler's Pub & Restaurant Hof</title>
 
 		<script defer src="src/js/jquery-3.6.0.min.js"></script>
+		<script
+			defer
+			src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+			integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+			crossorigin=""
+		></script>
 		<script defer src="src/js/index.js"></script>
 	</head>
 	<body>
@@ -110,23 +123,6 @@
 			</div>
 		</section>
 		<section class="gallery">
-			<!-- <div class="gallery__controlls">
-				<button class="gallery__controlls_btn gallery__controlls_btn-left">
-					<img src="src/img/arrow-btn.svg" alt="" />
-				</button>
-				<button class="gallery__controlls_btn gallery__controlls_btn-right">
-					<img src="src/img/arrow-btn.svg" alt="" />
-				</button>
-			</div>
-			<div class="gallery__carousel">
-				<img class="gallery__carousel_item" src="src/img/carousel/1.jpg"></img>
-				<img class="gallery__carousel_item" src="src/img/carousel/2.jpg"></img>
-				<img class="gallery__carousel_item" src="src/img/carousel/3.jpg"></img>
-				<img class="gallery__carousel_item" src="src/img/carousel/4.jpg"></img>
-				<img class="gallery__carousel_item" src="src/img/carousel/5.jpg"></img>
-				<img class="gallery__carousel_item" src="src/img/carousel/6.jpg"></img>
-				<img class="gallery__carousel_item" src="src/img/carousel/7.jpg"></img>
-			</div> -->
 			<div class="slider">
 				<div class="slider__container">
 					<div class="slider__slide">
@@ -161,7 +157,7 @@
 		</section>
 
 		<section class="contact h-section" id="contact">
-			<div class="contact__map">
+			<div class="contact__map" id="mapid">
 				<!-- leaflet map inserted by JS -->
 			</div>
 			<div class="contact__content h-section-content">

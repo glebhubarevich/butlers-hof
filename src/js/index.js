@@ -3,9 +3,9 @@
 //
 //Imports
 //
-// import {async} from 'regenerator-runtime';
 import {header} from './header.js';
 import {slider} from './slider.js';
+import {map} from './map.js';
 import $ from './jquery-3.6.0.min.js';
 window.$ = window.jQuery = $;
 
