@@ -65,21 +65,14 @@ body {
 				height: 12vw;
 				max-height: 27.5vh;
 				margin: 0 1.62vw;
-				@media screen and (max-width: 600px) and (orientation: portrait) {
+				@media screen and (max-width: 600px) {
 					height: 30vw;
 					max-height: 50vh;
-				}
-				@media screen and (max-width: 1000px) and (orientation: landscape) {
-					height: 30vw;
-					max-height: 30vh;
 				}
 			}
 			&-left,
 			&-right {
-				@media screen and (max-width: 600px) and (orientation: portrait) {
-					display: none;
-				}
-				@media screen and (max-width: 1000px) and (orientation: landscape) {
+				@media screen and (max-width: 600px) {
 					display: none;
 				}
 			}
@@ -95,6 +88,9 @@ body {
 				align-items: space-between;
 				justify-content: space-between;
 				text-align: center;
+				@media screen and (min-width: 600px) and (max-width: 1000px) {
+					transform: translateY(3rem);
+				}
 				&::after {
 					content: '';
 					position: absolute;
@@ -113,15 +109,15 @@ body {
 				font-size: 1.4vw;
 				text-transform: uppercase;
 				transition: all ease 0.3s;
+				@media screen and (min-width: 600px) and (max-width: 1000px) {
+					font-size: 2vw;
+				}
 				&:hover {
 					color: $color-orange;
 					transform: scale(105%);
 				}
 			}
-			@media screen and (max-width: 600px) and (orientation: portrait) {
-				display: none;
-			}
-			@media screen and (max-width: 1000px) and (orientation: landscape) {
+			@media screen and (max-width: 600px) {
 				display: none;
 			}
 		}
