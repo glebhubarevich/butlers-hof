@@ -6,12 +6,14 @@ const slides = document.querySelectorAll('.slider__slide');
 const slide = document.querySelector('.slider__slide_img');
 let curSlide = 0;
 
-// //Calculate how many slides fit on screen and get the max number of slider windows
-// const slideWidth = slide.offsetWidth + 30; //30px=margin/column-gap
-// const slidesOnScreen = Math.trunc(window.innerWidth / slideWidth);
-// let maxSlide = slides.length - slidesOnScreen;
+////////////
+////////////
 
-const getSlideWidth = () => slide.offsetWidth + 30; //30px = left margin/column-gap
+const getColumnGap = () =>
+	parseFloat(window.getComputedStyle(sliderBody, null).getPropertyValue('column-gap'));
+
+const getSlideWidth = () => slide.offsetWidth + getColumnGap();
+
 const getMaxSlide = () => {
 	const slidesOnScreen = Math.trunc(window.innerWidth / getSlideWidth());
 	return slides.length - slidesOnScreen;
