@@ -317,6 +317,7 @@
 		height: 47px;
 		width: 47%;
 		transform: translate(-50%, -50%) scale(95%);
+		-webkit-transform: translate(-50%, -50%);
 		transition: all ease 0.3s;
 	}
 	&:hover {
@@ -476,6 +477,7 @@
 	@media screen and (min-width: 600px) {
 		display: none;
 	}
+	display: none;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -485,7 +487,8 @@
 		right: 2rem;
 		width: 4rem;
 		height: 4rem;
-		z-index: 201;
+		z-index: 101;
+
 		@media screen and (min-width: 600px) {
 			display: none;
 		}
